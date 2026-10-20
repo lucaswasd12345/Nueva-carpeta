@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Nuevo Viaje</title>
+</head>
+<body>
+
+
+    <h1>Nuevo Viaje</h1>
+
+
+    <button>Inicio</button>
+    <button>Cerrar Sesión</button>
+
+
+    <p>
+        La fecha de inicio no puede ser en el pasado
+    </p>
+
+
+    <form>
+        <label>Destino:</label>
+        <input type="text" name="destino" required>
+        <br><br>
+
+
+        <label>Fecha de Inicio:</label>
+        <input type="date" name="fecha_inicio" required>
+        <br><br>
+
+
+        <label>Fecha de Fin:</label>
+        <input type="date" name="fecha_fin" required>
+        <br><br>
+
+
+        <label>Itinerario:</label>
+        <textarea name="itinerario"
+                  maxlength="40"
+                  required></textarea>
+        <br><br>
+
+
+        <button type="submit">Guardar</button>
+    </form>
+
+
+    <h3>Requisitos</h3>
+
+
+    <ul>
+        <li>El usuario debe haber iniciado sesión.</li>
+        <li>Todos los campos son obligatorios.</li>
+        <li>El itinerario no puede tener más de 40 caracteres.</li>
+        <li>La fecha de inicio no puede ser en el pasado.</li>
+        <li>La fecha de fin debe ser posterior a la fecha de inicio.</li>
+    </ul>
+
+
+</body>
+</html>
